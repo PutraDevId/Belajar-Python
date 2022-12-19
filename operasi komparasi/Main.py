@@ -8,8 +8,9 @@
 3. <= lebih kecil sama dengan
 4. >= lebih besar sama dengan
 5. == sama dengan
-6. is
-7. is not
+6. != tidak sama dengan
+7. is adalah membandingkan object
+8. is not
 
 '''
 
@@ -22,3 +23,14 @@ b = 2
 
 hasil = a > b  # true
 print(hasil)
+
+# untuk is jangan di gunakan membandingkan literal angka
+print(a is b)
+
+# untuk mengecek addres di python kita bisa menggunkan hex(nama vatiable) atau id(nama variable)
+
+
+# jika nilai dari variable sama maka otomatis si python akan menggabungkan dia ke addres yang sama sehingga tidak banyak memakan memory
+
+print('id dari a ', hex(id(a)))
+print('id dari b ', hex(id(b)))
